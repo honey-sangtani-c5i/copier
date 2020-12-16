@@ -208,7 +208,7 @@ func shouldIgnore(v reflect.Value, ignoreEmpty bool) bool {
 		return false
 	}
 
-	return v.IsZero()
+	return IsZero(v)
 }
 
 func deepFields(reflectType reflect.Type) []reflect.StructField {
