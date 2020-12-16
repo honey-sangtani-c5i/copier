@@ -207,8 +207,11 @@ func shouldIgnore(v reflect.Value, ignoreEmpty bool) bool {
 	if !ignoreEmpty {
 		return false
 	}
+	
+	log.Printf(reflect.Value)
+	log.Printf(v)
 
-	return IsZero(v)
+	return v.IsZero()
 }
 
 func deepFields(reflectType reflect.Type) []reflect.StructField {
