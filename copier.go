@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"reflect"
 	"strings"
+	"log"
 )
 
 // These flags define options for tag handling
